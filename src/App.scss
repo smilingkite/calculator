@@ -1,15 +1,11 @@
-.App {
+.App, body {
   text-align: center;
+  background-color: #222;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
-}
 
 .App-header {
   background-color: #222;
-  height: 150px;
   padding: 20px;
   color: white;
 }
@@ -18,11 +14,26 @@
   font-size: 1.5em;
 }
 
-.App-intro {
-  font-size: large;
+.calculation {
+  width: 20em;
+  height: 3em;
+  background: grey;
+  margin: 0 auto;
 }
 
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+.calculator {
+  margin: 0 auto;
+  background: firebrick;
 }
+
+.tg {
+  border: 1px solid;
+  margin: 0 auto;
+  background: whitesmoke;
+  font-size: 2em;
+}
+.button {
+  padding: 1em;
+  // background: whitesmoke;
+  cursor: pointer;
+} 

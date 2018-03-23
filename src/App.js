@@ -9,39 +9,42 @@ class App extends Component {
         <header className="App-header">
 
           <h1 className="App-title">Calculator</h1>
+          <p className="calculation "></p>
         </header>
-        <table class="tg">
-          <tr>
-            <th class="tg-yw4l">C</th>
-            <th class="tg-yw4l">/</th>
-            <th class="tg-yw4l">X</th>
-            <th class="tg-yw4l">back</th>
-          </tr>
-          <tr>
-            <td class="tg-yw4l">7</td>
-            <td class="tg-yw4l">8</td>
-            <td class="tg-yw4l">9</td>
-            <td class="tg-yw4l">-</td>
-          </tr>
-          <tr>
-            <td class="tg-yw4l">4</td>
-            <td class="tg-yw4l">5</td>
-            <td class="tg-yw4l">6</td>
-            <td class="tg-yw4l">+</td>
-          </tr>
-          <tr>
-            <td class="tg-yw4l">3</td>
-            <td class="tg-yw4l">2</td>
-            <td class="tg-yw4l">1</td>
-            <td class="tg-yw4l">()</td>
-          </tr>
-          <tr>
-            <td class="tg-yw4l">0</td>
-            <td class="tg-yw4l">.</td>
-            <td class="tg-yw4l">+/-</td>
-            <td class="tg-yw4l">=</td>
-          </tr>
-        </table>
+        <div className="calculator">
+          <table className="tg">
+            <tr>
+              <td className="button ">C</td>
+              <td className="button ">/</td>
+              <td className="button ">X</td>
+              <td className="button ">back</td>
+            </tr>
+            <tr>
+              <td className="button ">7</td>
+              <td className="button ">8</td>
+              <td className="button ">9</td>
+              <td className="button ">-</td>
+            </tr>
+            <tr>
+              <td className="button ">4</td>
+              <td className="button ">5</td>
+              <td className="button ">6</td>
+              <td className="button ">+</td>
+            </tr>
+            <tr>
+              <td className="button ">3</td>
+              <td className="button ">2</td>
+              <td className="button ">1</td>
+              <td className="button ">()</td>
+            </tr>
+            <tr>
+              <td className="button ">0</td>
+              <td className="button ">.</td>
+              <td className="button ">+/-</td>
+              <td className="button ">=</td>
+            </tr>
+          </table>
+        </div>
       </div>
     );
   }
