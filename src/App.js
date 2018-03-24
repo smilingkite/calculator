@@ -1,8 +1,16 @@
 import React, { Component } from 'react';
+import Button from './components/button';
 
 import './App.css';
 
 class App extends Component {
+  buttonValues = [
+    'C', '/', 'X','back',
+    7,8,9,'-',
+    4,5,6,'+',
+    3,2,1,'()',
+    0,'.','+/-','='
+  ]
   render() {
     return (
       <div className="App">
@@ -12,32 +20,10 @@ class App extends Component {
           <p className="calculation "></p>
         </header>
         <div className="calculator">
-
-              <div className="button ">C</div>
-              <div className="button ">/</div>
-              <div className="button ">X</div>
-              <div className="button ">back</div>
-
-              <div className="button ">7</div>
-              <div className="button ">8</div>
-              <div className="button ">9</div>
-              <div className="button ">-</div>
-
-              <div className="button ">4</div>
-              <div className="button ">5</div>
-              <div className="button ">6</div>
-              <div className="button ">+</div>
-
-              <div className="button ">3</div>
-              <div className="button ">2</div>
-              <div className="button ">1</div>
-              <div className="button ">()</div>
-
-              <div className="button ">0</div>
-              <div className="button ">.</div>
-              <div className="button ">+/-</div>
-              <div className="button ">=</div>
-
+          {this.buttonValues.map((value, i) =>
+            <Button key={i} buttonValue={value} className="button">
+            </Button>
+          )}
         </div>
       </div>
     );
