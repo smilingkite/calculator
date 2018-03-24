@@ -12,38 +12,32 @@ class App extends Component {
           <p className="calculation "></p>
         </header>
         <div className="calculator">
-          <table className="tg">
-            <tr>
-              <td className="button ">C</td>
-              <td className="button ">/</td>
-              <td className="button ">X</td>
-              <td className="button ">back</td>
-            </tr>
-            <tr>
-              <td className="button ">7</td>
-              <td className="button ">8</td>
-              <td className="button ">9</td>
-              <td className="button ">-</td>
-            </tr>
-            <tr>
-              <td className="button ">4</td>
-              <td className="button ">5</td>
-              <td className="button ">6</td>
-              <td className="button ">+</td>
-            </tr>
-            <tr>
-              <td className="button ">3</td>
-              <td className="button ">2</td>
-              <td className="button ">1</td>
-              <td className="button ">()</td>
-            </tr>
-            <tr>
-              <td className="button ">0</td>
-              <td className="button ">.</td>
-              <td className="button ">+/-</td>
-              <td className="button ">=</td>
-            </tr>
-          </table>
+
+              <div className="button ">C</div>
+              <div className="button ">/</div>
+              <div className="button ">X</div>
+              <div className="button ">back</div>
+
+              <div className="button ">7</div>
+              <div className="button ">8</div>
+              <div className="button ">9</div>
+              <div className="button ">-</div>
+
+              <div className="button ">4</div>
+              <div className="button ">5</div>
+              <div className="button ">6</div>
+              <div className="button ">+</div>
+
+              <div className="button ">3</div>
+              <div className="button ">2</div>
+              <div className="button ">1</div>
+              <div className="button ">()</div>
+
+              <div className="button ">0</div>
+              <div className="button ">.</div>
+              <div className="button ">+/-</div>
+              <div className="button ">=</div>
+
         </div>
       </div>
     );

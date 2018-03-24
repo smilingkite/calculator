@@ -1,11 +1,12 @@
+* {box-sizing: border-box;}
+
 .App, body {
   text-align: center;
-  background-color: #222;
+  background: #4d0000;
 }
 
 
 .App-header {
-  background-color: #222;
   padding: 20px;
   color: white;
 }
@@ -23,17 +24,24 @@
 
 .calculator {
   margin: 0 auto;
-  background: firebrick;
-}
-
-.tg {
+  width: 12em;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
   border: 1px solid;
+  border-radius: 5px;
   margin: 0 auto;
-  background: whitesmoke;
-  font-size: 2em;
+  font-size: 1.5em;
+  .button {
+    padding: 0.5em;
+    background: whitesmoke;
+    cursor: pointer;
+    border: 2px solid #ffa94d;
+    border-radius: 5px;
+    // :hover {
+    //   background: #ffa94d;
+    //   -webkit-box-shadow: inset 0px 0px 41px 9px rgba(231,166,26,0.61);
+    //   -moz-box-shadow: inset 0px 0px 41px 9px rgba(231,166,26,0.61);
+    //   box-shadow: inset 0px 0px 41px 9px rgba(231,166,26,0.61);
+    // }
+  } 
 }
-.button {
-  padding: 1em;
-  // background: whitesmoke;
-  cursor: pointer;
-} 
