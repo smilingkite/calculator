@@ -67,7 +67,7 @@ class App extends Component {
         if (value[0]=== '-') {
           value = value.substring(1);
         } else {
-          value = '-' + value;
+          value = '-(' + value + ')';
         }
         break;
       case '+':
