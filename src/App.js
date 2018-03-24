@@ -1,8 +1,7 @@
 import React, { Component } from 'react';
-import math from 'mathjs'; 
 import Button from './components/button';
-
 import './App.css';
+var math = require('mathjs-expression-parser')
 
 var value = "";
 

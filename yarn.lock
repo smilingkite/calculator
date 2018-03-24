@@ -2297,7 +2297,7 @@ escape-html@~1.0.3:
   version "1.0.3"
   resolved "https://registry.yarnpkg.com/escape-html/-/escape-html-1.0.3.tgz#0258eae4d3d0c0974de1c169188ef0051d1d1988"
 
-escape-latex@1.0.0:
+escape-latex@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/escape-latex/-/escape-latex-1.0.0.tgz#74b9e94d8c178645704c33791e95a4155b59718f"
 
@@ -4504,18 +4504,24 @@ math-expression-evaluator@^1.2.14:
   version "1.2.17"
   resolved "https://registry.yarnpkg.com/math-expression-evaluator/-/math-expression-evaluator-1.2.17.tgz#de819fdbcd84dccd8fae59c6aeb79615b9d266ac"
 
-mathjs@^4.0.1:
-  version "4.0.1"
-  resolved "https://registry.yarnpkg.com/mathjs/-/mathjs-4.0.1.tgz#d2a8de08df5521231eb8e7e122e0890e618f8f8d"
+mathjs-expression-parser@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/mathjs-expression-parser/-/mathjs-expression-parser-1.0.0.tgz#a164689b56e682099a855a6d3e2570ddf664d7ab"
+  dependencies:
+    mathjs "3.*"
+
+mathjs@3.*:
+  version "3.20.2"
+  resolved "https://registry.yarnpkg.com/mathjs/-/mathjs-3.20.2.tgz#3218aebde7de8cb5627c8fe3a1a216bf399ba91d"
   dependencies:
     complex.js "2.0.4"
     decimal.js "9.0.1"
-    escape-latex "1.0.0"
+    escape-latex "^1.0.0"
     fraction.js "4.0.4"
     javascript-natural-sort "0.7.1"
     seed-random "2.2.0"
     tiny-emitter "2.0.2"
-    typed-function "1.0.3"
+    typed-function "0.10.7"
 
 md5.js@^1.3.4:
   version "1.3.4"
@@ -7033,9 +7039,9 @@ type-is@~1.6.15, type-is@~1.6.16:
     media-typer "0.3.0"
     mime-types "~2.1.18"
 
-typed-function@1.0.3:
-  version "1.0.3"
-  resolved "https://registry.yarnpkg.com/typed-function/-/typed-function-1.0.3.tgz#57026246214b664a5af45ef0a06679f4453bd090"
+typed-function@0.10.7:
+  version "0.10.7"
+  resolved "https://registry.yarnpkg.com/typed-function/-/typed-function-0.10.7.tgz#f702af7d77a64b61abf86799ff2d74266ebc4477"
 
 typedarray@^0.0.6:
   version "0.0.6"
