@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import math from 'mathjs'; 
 import Button from './components/button';
 
 import './App.css';
@@ -31,6 +32,23 @@ class App extends Component {
         break;
       case 'back':
         value = value.slice(0, -1); 
+        break;
+      case '=':
+        value = String(math.eval(value));
+        break;
+      case '()':
+        if (value.lastIndexOf('(') > value.lastIndexOf(')')) {
+          value = value + ')'
+        } else {
+          value = value + '('
+        }
+        break;
+      case '+/-':
+        if (value[0]=== '-') {
+          value = value.substring(1);
+        } else {
+          value = '-' + value;
+        }
         break;
       default:   
         value = value + e.value
