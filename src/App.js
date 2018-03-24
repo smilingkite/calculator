@@ -5,6 +5,20 @@ var math = require('mathjs-expression-parser')
 
 var value = "";
 
+function checkDoubleOperators(value){
+  switch (value.slice(-1)) {
+    case '+':
+    case '-':
+    case '/':
+    case '*':
+    value = value.slice(0,-1)
+      break;
+    default:
+      break;
+  }
+  return value
+}
+
 class App extends Component {
   buttonValues = [
     'C', '/', 'X','back',
@@ -21,6 +35,7 @@ class App extends Component {
     };
   }
 
+
   handleClick(e){
     switch(e.value) {
       case '=':
@@ -30,13 +45,13 @@ class App extends Component {
         try {value = String(math.eval(value));}
         catch(error) {
           console.error(error)
-
         }
         break;
       case 'C':    
         value = ""
         break;
       case 'X':
+        value = checkDoubleOperators(value);
         value = value + '*'
         break;
       case 'back':
@@ -56,6 +71,12 @@ class App extends Component {
           value = '-' + value;
         }
         break;
+      case '+':
+      case '-':
+      case '/':
+        value = checkDoubleOperators(value);
+        value = value + e.value
+        break; 
       default:   
         value = value + e.value
     }
