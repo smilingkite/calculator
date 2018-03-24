@@ -22,8 +22,19 @@ class App extends Component {
   }
 
   handleClick(e){
-    value = value + e.value
-    console.log(value);
+    switch(e.value) {
+      case 'C':    
+        value = ""
+        break;
+      case 'X':
+        value = value + '*'
+        break;
+      case 'back':
+        value = value.slice(0, -1); 
+        break;
+      default:   
+        value = value + e.value
+    }
     this.setState({ value: value });
   }
 
