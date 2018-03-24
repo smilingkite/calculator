@@ -2,19 +2,12 @@ var React = require('react');
 
 const Button = (props) => {
 
-  const submit = e => {
-    // e.preventDefault();
-    // let kaart = _kaart.letters.value + _kaart.cijfers.value
-    // onNewCard(kaart);
-    // e.target.reset();
-  };
-  // const handleChange = e => {
-  //   _kaart[e.target.name]= e.target.value;
-  // };
-
-  
+  const handleClick = (e) => {
+    e.preventDefault();
+    console.log('The link was clicked.', props.buttonValue);
+  }
   return (
-    <div className="button">
+    <div className="button" onClick={handleClick} >
       {props.buttonValue}
     </div>
   );
