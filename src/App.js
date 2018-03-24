@@ -23,6 +23,10 @@ class App extends Component {
 
   handleClick(e){
     switch(e.value) {
+      case '=':
+        try {value = String(math.eval(value));}
+        catch(error) {console.error(error)}
+        break;
       case 'C':    
         value = ""
         break;
@@ -31,9 +35,6 @@ class App extends Component {
         break;
       case 'back':
         value = value.slice(0, -1); 
-        break;
-      case '=':
-        value = String(math.eval(value));
         break;
       case '()':
         if (value.lastIndexOf('(') > value.lastIndexOf(')')) {
