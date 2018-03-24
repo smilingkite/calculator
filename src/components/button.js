@@ -1,16 +1,13 @@
-var React = require('react');
+import React, { PureComponent } from 'react';
 
-const Button = (props) => {
-
-  const handleClick = (e) => {
-    e.preventDefault();
-    console.log('The link was clicked.', props.buttonValue);
-  }
-  return (
-    <div className="button" onClick={handleClick} >
-      {props.buttonValue}
+class Button extends PureComponent {
+	render() {
+   return (
+    <div className="button" onClick={this.props.onClick}>
+      {this.props.buttonValue}
     </div>
-  );
-};
+    );
+  };
+}
 
 export default Button;
