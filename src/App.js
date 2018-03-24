@@ -35,7 +35,6 @@ class App extends Component {
     };
   }
 
-
   handleClick(e){
     switch(e.value) {
       case '=':
